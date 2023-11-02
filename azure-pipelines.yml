@@ -26,15 +26,8 @@ steps:
 - task: Docker@2
   inputs:
     containerRegistry: 'Docker'
-    repository: 'devopsdemo'
+    repository: 'imemon93/devopsdemo'
     command: 'build'
     Dockerfile: '**/Dockerfile'
     addPipelineData: false
     addBaseImageData: false
-    
-- task: Docker@2
-  inputs:
-    containerRegistry: 'Docker'
-    repository: 'imemon93/devopsdemo'
-    command: 'push'
-    tags: '14'
