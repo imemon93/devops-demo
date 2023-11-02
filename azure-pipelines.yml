@@ -27,7 +27,7 @@ steps:
   inputs:
     containerRegistry: 'Docker'
     repository: 'devopsdemo'
-    command: 'buildAndPush'
+    command: 'build'
     Dockerfile: '**/Dockerfile'
     addPipelineData: false
     addBaseImageData: false
